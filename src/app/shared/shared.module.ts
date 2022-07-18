@@ -4,13 +4,17 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { NavbarDashboardComponent } from './navbar-dashboard/navbar-dashboard.component';
+import { AsideDashboardComponent } from './aside-dashboard/aside-dashboard.component';
 
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarDashboardComponent,
+    AsideDashboardComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +23,9 @@ import { AppRoutingModule } from '../app-routing.module';
   exports: [
     NavbarComponent,
     FooterComponent,
-    AppRoutingModule
+    AppRoutingModule,
+    NavbarDashboardComponent,
+    AsideDashboardComponent
   ]
 })
 export class SharedModule { }
