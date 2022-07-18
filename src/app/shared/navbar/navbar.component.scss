@@ -1,0 +1,66 @@
+.myPetsNav{
+    background-color: #F2A104;
+    justify-content: center;
+}
+.myPetsNav2{
+    background-color: #1D65A6;
+    justify-content: center;
+    color: black;
+ 
+}
+.sidebarMypets{
+    background: #1D65A6;
+}
+
+.logoNav{
+    width: 100%;
+}
+.searchButton{
+    
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #1D65A6;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+}
+.searchInput{
+    border-radius: 10px;
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+}
+.searchInput:focus {
+    outline: 0;
+}
+.toggleButton{
+    border-color: #1D65A6 ;
+    background-color: #1D65A6;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border-radius: 10px;
+}
+.cartButton{
+    border-color: #1D65A6 ;
+    background-color: #1D65A6;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border-radius: 10px;
+}
+
+.toggle-icon{
+    color: #ffffff;
+    
+}
