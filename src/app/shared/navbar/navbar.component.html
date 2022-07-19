@@ -1,40 +1,49 @@
 <nav class="navbar navbar-expand-lg navbar-light myPetsNav">
   <div class="container-fluid">
-    <div class="col-2">
+    <div class="col-3 d-flex ps-3">
       <img src="../../../assets/img/logo.PNG" class="logoNav" alt="">
     </div>
 
-    <div class="col-7 d-flex">
-      <i class="bi bi-search searchButton"></i>
+    <div class="col-7 d-flex justify-content-center hideSearch navSection">
+      <button class="btn searchButton"><i class="bi bi-search"></i></button>
       <input class="form-control me-2 searchInput" type="search" placeholder="Search" aria-label="Search">
     </div>
  
-    <div class="col-3 d-flex">
-      <i class="bi bi-bag-heart cartButton"></i>
-      <button class="navbar-toggler toggleButton ms-2" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
+    <div class="col-2 d-flex">
+      <div class="col-6 d-flex justify-content-end">
+        <button class="btn cartButton"><i class="bi bi-bag-heart "></i></button>
+      </div>
+      <div class="col-6 d-flex justify-content-center hide">
+        <button class="btn toggleButton">
         <i class="bi bi-list toggle-icon"></i>
       </button>
+      </div>
     </div>
 
   </div>
 
 </nav>
-<nav class="navbar navbar-expand-lg navbar-light  myPetsNav2">
+<nav class="navbar navbar-expand-lg navbar-light hideSections myPetsNav2" id="sideBar" >
   <div class="container-fluid d-flex justify-content-center sidebarMypets">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse h20px " id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link " aria-current="inicio" routerLink="inicio" routerLinkActive="active">Inicio</a>
+          <a class="nav-link white " aria-current="inicio" routerLink="inicio" routerLinkActive="active">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="servicios" routerLinkActive="active">Servicios</a>
+          <a class="nav-link " routerLink="servicios" routerLinkActive="active">Servicios</a>
         </li>
       </ul>
     </div>
 
   </div>
 
+</nav>
+
+<nav class="hideSearchBottom d-flex justify-content-center">
+  <div class="col-12 d-flex justify-content-center">
+    <i class="bi bi-search searchButton"></i>
+    <input class="form-control me-2 searchInput" type="search" placeholder="Search" aria-label="Search">
+  </div>
 </nav>
