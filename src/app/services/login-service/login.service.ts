@@ -7,7 +7,7 @@ import { HttpClient, HttpClientModule, HttpHeaders, HttpParams, HttpErrorRespons
 })
 export class LoginService {
 
-  userName: string = 'tokentest';
+  username: string = 'tokentest';
   password: string = 'T34sTok3n';
 
   constructor(public http: HttpClient) { }
@@ -15,7 +15,7 @@ export class LoginService {
 
   loginService() {
     return this.http.post('https://mypetsplus.co/api/token-auth/', {
-      userName: this.userName,
+      username: this.username,
       password: this.password
     });
 
