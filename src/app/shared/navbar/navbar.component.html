@@ -1,47 +1,58 @@
-<nav class="navbar navbar-expand-lg navbar-light myPetsNav">
+<!-- nav desktop-->
+<nav class="navbar navbar-light mypets-nav">
   <div class="container-fluid">
-    <div class="col-3 d-flex ps-3">
-      <img src="../../../assets/img/logo.PNG" class="logoNav" alt="">
+    <!-- img navbar -->
+    <div class="col-3">
+      <a class="navbar-brand fs-4 d-flex align-items-center fw-bold" href="#"><img class="img-logo"
+          src="../../../assets/img/logo.PNG" alt=""></a>
     </div>
-
-    <div class="col-7 d-flex justify-content-center hideSearch navSection">
-      <button class="btn searchButton"><i class="bi bi-search"></i></button>
+    <!-- search box -->
+    <div class="col-6 d-flex justify-content-center hideSearch">
+      <i class="bi bi-search searchButton"></i>
       <input class="form-control me-2 searchInput" type="search" placeholder="Search" aria-label="Search">
     </div>
- 
-    <div class="col-2 d-flex">
-      <div class="col-6 d-flex justify-content-end">
-        <button class="btn cartButton"><i class="bi bi-bag-heart "></i></button>
-      </div>
-      <div class="col-6 d-flex justify-content-center hide">
-        <button class="btn toggleButton">
-        <i class="bi bi-list toggle-icon"></i>
+    <!-- toggle button -->
+    <form class="col-3 d-flex justify-content-end">
+      <button class="navbar-toggler toggleButton hideSections " (click)="showNavMobile()" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="bi bi-list toggle-icon "></i>
       </button>
-      </div>
-    </div>
-
+    </form>
   </div>
-
 </nav>
-<nav class="navbar navbar-expand-lg navbar-light hideSections myPetsNav2" id="sideBar" >
-  <div class="container-fluid d-flex justify-content-center sidebarMypets">
+<!-- nav routes mobile -->
+<div class="collapse" id="navbarToggleExternalContent">
+  <div class="bg-dark p-4 vh93">
+    <ul class="navbar-nav  hover mb-2 mt-2 mb-lg-0 ">
+      <li class="nav-item d-flex justify-content-center">
+        <a class="nav-link2 nav-text" aria-current="home" routerLink="home" routerLinkActive="active">Home</a>
+      </li>
+      <li class="nav-item d-flex justify-content-center mt-4">
+        <a class="nav-link2 nav-text" aria-current="services" routerLink="services"
+          routerLinkActive="active">Services</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
-    <div class="collapse navbar-collapse h20px " id="navbarSupportedContent">
+<!-- nav routes desktop -->
+<nav class="navbar navbar-expand-lg navbar-light  myPetsNav2" id="sideBar">
+  <div class="container-fluid d-flex justify-content-center sidebarMypets">
+    <div class="collapse navbar-collapse h20px ">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link white " aria-current="inicio" routerLink="inicio" routerLinkActive="active">Inicio</a>
+          <a class="nav-link white " aria-current="home" routerLink="home" routerLinkActive="active">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " routerLink="servicios" routerLinkActive="active">Servicios</a>
+          <a class="nav-link " routerLink="services" routerLinkActive="active">Services</a>
         </li>
       </ul>
     </div>
-
   </div>
-
 </nav>
-
-<nav class="hideSearchBottom d-flex justify-content-center">
+<!-- nav search box mobile -->
+<nav *ngIf="this.flag==true" id="searchBox" class="hideSearchBottom pt-2 pb-2">
   <div class="col-12 d-flex justify-content-center">
     <i class="bi bi-search searchButton"></i>
     <input class="form-control me-2 searchInput" type="search" placeholder="Search" aria-label="Search">

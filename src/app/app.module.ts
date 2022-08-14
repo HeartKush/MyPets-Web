@@ -5,18 +5,26 @@ import { AppComponent } from './app.component';
 import { AdminModule } from './components/admin/admin.module';
 import { PublicModule } from './components/public/public.module';
 import { SharedModule } from './shared/shared.module';
+import { CommonModule } from '@angular/common'; 
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PublicModule,
     AdminModule,
-    SharedModule
+    SharedModule,
+    CommonModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { NavbarDashboardComponent } from './navbar-dashboard/navbar-dashboard.component';
 import { AsideDashboardComponent } from './aside-dashboard/aside-dashboard.component';
+import { SidebarHomeComponent } from './sidebar-home/sidebar-home.component';
 
 
 
@@ -14,7 +15,8 @@ import { AsideDashboardComponent } from './aside-dashboard/aside-dashboard.compo
     NavbarComponent,
     FooterComponent,
     NavbarDashboardComponent,
-    AsideDashboardComponent
+    AsideDashboardComponent,
+    SidebarHomeComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { AsideDashboardComponent } from './aside-dashboard/aside-dashboard.compo
     FooterComponent,
     AppRoutingModule,
     NavbarDashboardComponent,
-    AsideDashboardComponent
+    AsideDashboardComponent,
+    SidebarHomeComponent
   ]
 })
 export class SharedModule { }

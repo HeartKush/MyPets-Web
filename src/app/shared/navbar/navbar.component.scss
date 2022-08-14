@@ -1,127 +1,116 @@
-.myPetsNav{
-    background-color: #F2A104;
-    justify-content: center;
+.collapsing {
+  height: 2;
+  overflow: hidden;
+  transition: height .8s ease;
 }
-.myPetsNav2{
-    background-color: #1D65A6;
-    justify-content: center;
-    color: black;
- 
+.nepe{
+  color: #1d65a6;
 }
-.sidebarMypets{
-    background: #1D65A6;
-    color: #fff;
+.img-logo {
+  width: 40%;
 }
-
-.logoNav{
-    width: 78%;
+.mypets-nav {
+  background-color: #f2a104;
 }
-.nav-link{
-    color: #ced4da !important;
-    font-size: 20px;
+.myPetsNav2 {
+  background-color: #1d65a6;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
-.nav-link.active{
-    color:#F2A104 !important; 
-}
-.searchButton{
-    
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #ffffff;
-    background-color: #1D65A6;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 10px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-.searchButton:focus{
-    box-shadow: 0 0 0 0.1rem #fff !important;
-}
-.searchInput{
-    border-radius: 10px;
-    border-bottom-left-radius: 0%;
-    border-top-left-radius: 0%;
-    width: 80%;
-    background-color: #fff;
-}
-.searchInput:focus{
-    box-shadow: 0 0 0 0.1rem #fff !important;
-}
-.toggleButton{
-    display: none !important;
-    border-color: #1D65A6 ;
-    background-color: #1D65A6;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    background-clip: padding-box;
-    border-radius: 10px;
-    }
-.toggleButton:focus{
-     box-shadow: 0 0 0 0.2rem #fff !important;
+.navbar-toggler {
+  background-color: #1d65a6;
+  color: #fff;
 }
 
-.cartButton{
-    border-color: #1D65A6 ;
-    background-color: #1D65A6;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    color: #ffffff;
-    font-weight: 400;
-    line-height: 1.5;
-    background-clip: padding-box;
-    border-radius: 10px;
+.toggleButton {
+  border-color: #1d65a6;
+  background-color: #1d65a6;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-clip: padding-box;
+  border-radius: 10px;
 }
-.cartButton:focus{
-    box-shadow: 0 0 0 0.2rem #fff !important;
+.toggleButton:focus {
+  box-shadow: 0 0 0 0.2rem #fff !important;
 }
-
-.toggle-icon{
-    color: #ffffff;
-    
+.nav-link {
+  color: #ced4da !important;
+  font-size: 20px;
 }
-.hideSections{
-    display: block;
+.nav-link:hover {
+  color: #1d65a6 !important;
 }
-
-.hideSearch{
-    display: block;
-   
+.nav-link.active {
+  color: #f2a104 !important;
 }
-.hideSearchBottom{
-    display: none !important;
-    background: #1D65A6;
-    margin-top: -1px;
-    padding-bottom: 9px;
-    padding-top: 9px;
-    box-shadow: #08090a 0px -1px 0px 0px;
-
+.nav-link2 {
+  text-decoration: none;
+  color: #1d65a6 !important;
+  font-size: 20px;
 }
-.navSection{
-    padding: 0!important;
+.nav-link2:hover {
+  color: #f2a104 !important;
 }
-.h20px{
-    height: 20px;
+.nav-link2.active {
+  color: #f2a104 !important;
 }
 
+.searchButton {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #1d65a6;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.searchButton:focus {
+  box-shadow: 0 0 0 0.1rem #fff !important;
+}
+
+.searchInput {
+  border-radius: 10px;
+  border-bottom-left-radius: 0%;
+  border-top-left-radius: 0%;
+  width: 80%;
+  background-color: #fff;
+}
+.searchInput:focus {
+  box-shadow: 0 0 0 0.1rem #fff !important;
+}
+.hideSections {
+  display: none !important;
+}
+.hideSearchBottom {
+  display: none !important;
+  background-color: #1d65a6;
+}
+.hideSearch {
+  display: flex !important;
+}
 
 @media (max-width: 991px) {
-    .toggleButton{
-        display: block !important;
-    }
-    .hideSections{
-        display: none;
-    }
-    .hideSearch{
-        display: none !important;
-    }
-    .hideSearchBottom{
-        display: block !important;
-    }
-  
+  .img-logo {
+    width: 100px;
+  }
+  .toggleButton {
+    display: block !important;
+  }
+  .hideSections {
+    display: block !important;
+  }
+
+  .hideSearch {
+    display: none !important;
+  }
+  .hideSearchBottom {
+    display: block !important;
+  }
 }
-    

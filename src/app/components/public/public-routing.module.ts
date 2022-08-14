@@ -6,16 +6,16 @@ import { ServicesComponent } from './services/services.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'inicio',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
     component:HomeComponent,
-    path: 'inicio'
+    path: 'home'
   },
   {
     component:ServicesComponent,
-    path: 'servicios'
+    path: 'services'
   }
 ];
 
