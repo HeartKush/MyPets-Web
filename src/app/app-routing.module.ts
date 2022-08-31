@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: () => import('./components/admin/admin-routing.module').then(m => m.AdminRoutingModule)
   },
   {
+    path: 'coming-soon',
+    loadChildren: () => import('./components/coming-soon/coming-soon-routing.module').then(m => m.ComingSoonRoutingModule)
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full'

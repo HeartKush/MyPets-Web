@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { CommonModule } from '@angular/common'; 
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 
 
 
@@ -15,6 +16,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
+    ComingSoonComponent,
   ],
   imports: [
     BrowserModule,

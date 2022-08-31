@@ -1,0 +1,51 @@
+
+.img-top{
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    margin-left: -38%;
+    margin-top: -59%;
+}
+.img-bot{
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    margin-left: 40%;
+    margin-top: 151%;
+}
+.dog-logo{
+    z-index: 2;
+    width: 113%;
+    position: absolute;
+    margin-left: -18%;
+    margin-top: 152.7%;
+}
+.logo{
+    z-index: 2;
+    width: 35%;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 2%;
+
+}
+.twitter{
+    z-index: 2;
+    position: absolute;
+    width: 9%;
+    margin-left: 10%;
+    margin-top: 204.7%;
+}
+.facebook{
+    z-index: 2;
+    position: absolute;
+    width: 9%;
+    margin-left: -1%;
+    margin-top: 204.7%;
+}
+.instagram{
+    z-index: 2;
+    position: absolute;
+    width: 9%;
+    margin-left: 21%;
+    margin-top: 204.7%;
+}
